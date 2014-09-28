@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created on: 1/11/2014 8:29:19 AM-->
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:jd2="http://www.sys-bio.org/sbml/jd2">
+  <!--                     -->
+  <!--  Model Starts Here  -->
+  <!--                     -->
+  <model id="Jana_WolfGlycolysis" name="JanaWolf Glycolysis">
+    <annotation>
+      <listOfLayouts xmlns="http://projects.eml.org/bcb/sbml/level2">
+        <layout id="JDesigner2_0" xmlns="http://projects.eml.org/bcb/sbml/level2">
+          <!--Created by SBW SBML LayoutViewer/Manipulator-->
+          <annotation>
+            <listOfRenderInformation xmlns="http://projects.eml.org/bcb/sbml/render/level2">
+              <renderInformation id="ConvertedRenderStyle" programName="SBML Layout Viewer - SBW version" programVersion="2.7.5121.21120 Compiled on: 1/9/2014 11:44:00 AM">
+                <listOfColorDefinitions>
+                  <colorDefinition id="Color_0" value="#969696" />
+                  <colorDefinition id="Color_1" value="#ff7faa" />
+                  <colorDefinition id="Color_2" value="#ffd4d4" />
+                  <colorDefinition id="Color_3" value="#7fff55" />
+                  <colorDefinition id="Color_4" value="#c0c0c0" />
+                  <colorDefinition id="Color_5" value="#d4ffaa" />
+                  <colorDefinition id="Color_6" value="#000000" />
+                  <colorDefinition id="Color_7" value="#ff9900" />
+                </listOfColorDefinitions>
+                <listOfGradientDefinitions>
+                  <linearGradient x1="0%" y1="0%" z1="0%" x2="100%" y2="0%" z2="100%" id="LinearGradient_0" spreadMethod="reflect">
+                    <stop offset="0%" stop-color="#ccffff" />
+                    <stop offset="100%" stop-color="#ffffff" />
+                  </linearGradient>
+                </listOfGradientDefinitions>
+                <listOfLineEndings>
+                  <lineEnding id="product" enableRotationalMapping="true">
+                    <boundingBox>
+                      <position x="-10" y="-5" />
+                      <dimensions width="10" height="10" />
+                    </boundingBox>
+                    <g stroke="Color_7" stroke-width="0.001" fill="Color_7" font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <polygon>
+                        <listOfCurveSegments>
+                          <curveSegment xsi:type="LineSegment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <start x="0%" y="0%" />
+                            <end x="100%" y="50%" />
+                          </curveSegment>
+                          <curveSegment xsi:type="LineSegment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <start x="100%" y="50%" />
+                            <end x="0%" y="100%" />
+                          </curveSegment>
+                          <curveSegment xsi:type="LineSegment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <start x="0%" y="100%" />
+                            <end x="33%" y="50%" />
+                          </curveSegment>
+                          <curveSegment xsi:type="LineSegment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <start x="33%" y="50%" />
+                            <end x="0%" y="0%" />
+                          </curveSegment>
+                        </listOfCurveSegments>
+                      </polygon>
+                    </g>
+                  </lineEnding>
+                  <lineEnding id="inhibitor" enableRotationalMapping="true">
+                    <boundingBox>
+                      <position x="-0.5" y="-4" />
+                      <dimensions width="0.6" height="8" />
+                    </boundingBox>
+                    <g stroke="Color_7" stroke-width="2" font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <polygon>
+                        <listOfElements>
+                          <element xsi:type="RenderPoint" x="0" y="0" z="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                          <element xsi:type="RenderPoint" x="0.3" y="0" z="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                          <element xsi:type="RenderPoint" x="0.3" y="8" z="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                          <element xsi:type="RenderPoint" x="0" y="8" z="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+                        </listOfElements>
+                      </polygon>
+                    </g>
+                  </lineEnding>
+                </listOfLineEndings>
+                <listOfStyles>
+                  <style idList="sGlyph_0">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="LinearGradient_0" x="0" y="0" width="54" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_1">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="LinearGradient_0" x="0" y="0" width="150" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_2">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="LinearGradient_0" x="0" y="0" width="157" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_3">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="LinearGradient_0" x="0" y="0" width="128" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_4">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="LinearGradient_0" x="0" y="0" width="57" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_5">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="LinearGradient_0" x="0" y="0" width="87" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_6">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="LinearGradient_0" x="0" y="0" width="124" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_7 sGlyph_7_alias_0 sGlyph_7_alias_1">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="Color_1" x="0" y="0" width="34" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_8 sGlyph_8_alias_2 sGlyph_8_alias_3">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="Color_2" x="0" y="0" width="35" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_9 sGlyph_9_alias_4 sGlyph_9_alias_5">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_4" stroke-width="1" fill="Color_3" x="0" y="0" width="36" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_10 sGlyph_10_alias_6 sGlyph_10_alias_7">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_0" stroke-width="1" fill="Color_5" x="0" y="0" width="43" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_11">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_6" stroke-width="3" fill="LinearGradient_0" x="0" y="0" width="97" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_12">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_6" stroke-width="3" fill="LinearGradient_0" x="0" y="0" width="49" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_13">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_6" stroke-width="3" fill="LinearGradient_0" x="0" y="0" width="54" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style idList="sGlyph_14">
+                    <g font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top">
+                      <rectangle stroke="Color_6" stroke-width="3" fill="LinearGradient_0" x="0" y="0" width="34" height="24" rx="5" ry="5" />
+                    </g>
+                  </style>
+                  <style roleList=" product">
+                    <g stroke="Color_7" stroke-width="2" font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top" endHead="product" />
+                  </style>
+                  <style roleList="substrate sidesubstrate" idList="rGlyph_0 rGlyph_1 rGlyph_2 rGlyph_3 rGlyph_4 rGlyph_5 rGlyph_6 rGlyph_7 rGlyph_8 rGlyph_9 rGlyph_10">
+                    <g stroke="Color_7" stroke-width="2" font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top" />
+                  </style>
+                  <style roleList=" inhibitor">
+                    <g stroke="Color_7" stroke-width="2" font-size="0" font-style="normal" font-weight="normal" text-anchor="start" vtext-anchor="top" endHead="inhibitor" />
+                  </style>
+                  <style idList="tGlyph_0 tGlyph_1 tGlyph_2 tGlyph_3 tGlyph_4 tGlyph_5 tGlyph_6 tGlyph_7 tGlyph_10 tGlyph_13 tGlyph_16 tGlyph_19 tGlyph_20 tGlyph_21 tGlyph_22 sGlyph_7_alias_0_text sGlyph_7_alias_1_text sGlyph_8_alias_2_text sGlyph_8_alias_3_text sGlyph_9_alias_4_text sGlyph_9_alias_5_text sGlyph_10_alias_6_text sGlyph_10_alias_7_text">
+                    <g stroke="Color_6" font-family="Arial" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" vtext-anchor="top" />
+                  </style>
+                </listOfStyles>
+              </renderInformation>
+            </listOfRenderInformation>
+          </annotation>
+          <dimensions width="727" height="862.5" />
+          <listOfSpeciesGlyphs>
+            <speciesGlyph id="sGlyph_0" species="Glucose">
+              <boundingBox>
+                <position x="280" y="84" />
+                <dimensions width="54" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_1" species="fructose_1_6_bisphosphate">
+              <boundingBox>
+                <position x="293" y="202" />
+                <dimensions width="150" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_2" species="glyceraldehyde_3_phosphate">
+              <boundingBox>
+                <position x="286" y="314" />
+                <dimensions width="157" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_3" species="glycerate_3_phosphate">
+              <boundingBox>
+                <position x="302" y="438" />
+                <dimensions width="128" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_4" species="pyruvate">
+              <boundingBox>
+                <position x="333" y="569" />
+                <dimensions width="57" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_5" species="Acetyladehyde">
+              <boundingBox>
+                <position x="320" y="652" />
+                <dimensions width="87" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_6" species="External_acetaldehyde">
+              <boundingBox>
+                <position x="425" y="722" />
+                <dimensions width="124" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_7" species="ATP">
+              <boundingBox>
+                <position x="509" y="79" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_8" species="ADP">
+              <boundingBox>
+                <position x="506" y="172" />
+                <dimensions width="35" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_9" species="NAD">
+              <boundingBox>
+                <position x="138" y="247" />
+                <dimensions width="36" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_10" species="NADH">
+              <boundingBox>
+                <position x="217" y="598" />
+                <dimensions width="43" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_11" species="External_glucose">
+              <boundingBox>
+                <position x="121" y="61" />
+                <dimensions width="97" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_12" species="ethanol">
+              <boundingBox>
+                <position x="137" y="738" />
+                <dimensions width="49" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_13" species="Glycerol">
+              <boundingBox>
+                <position x="119" y="319" />
+                <dimensions width="54" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_14" species="Sink">
+              <boundingBox>
+                <position x="574" y="777" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_7_alias_0" species="ATP">
+              <boundingBox>
+                <position x="486" y="530" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_7_alias_1" species="ATP">
+              <boundingBox>
+                <position x="486" y="415" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_8_alias_2" species="ADP">
+              <boundingBox>
+                <position x="481" y="475" />
+                <dimensions width="35" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_8_alias_3" species="ADP">
+              <boundingBox>
+                <position x="477" y="351" />
+                <dimensions width="35" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_9_alias_4" species="NAD">
+              <boundingBox>
+                <position x="127" y="638" />
+                <dimensions width="36" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_9_alias_5" species="NAD">
+              <boundingBox>
+                <position x="232" y="356" />
+                <dimensions width="36" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_10_alias_6" species="NADH">
+              <boundingBox>
+                <position x="253" y="248" />
+                <dimensions width="43" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+            <speciesGlyph id="sGlyph_10_alias_7" species="NADH">
+              <boundingBox>
+                <position x="228" y="397" />
+                <dimensions width="43" height="24" />
+              </boundingBox>
+            </speciesGlyph>
+          </listOfSpeciesGlyphs>
+          <listOfReactionGlyphs>
+            <reactionGlyph id="rGlyph_0" reaction="J0">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J0_0" render:objectRole="product" speciesReference="Glucose" speciesGlyph="sGlyph_0" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="225" y="85.4117647058823" />
+                        <end x="273" y="94.2" />
+                        <basePoint1 x="246" y="91" />
+                        <basePoint2 x="247" y="92" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J0_2" render:objectRole="substrate" speciesReference="External_glucose" speciesGlyph="sGlyph_11" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_1" reaction="J1">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J1_0" render:objectRole="product" speciesReference="fructose_1_6_bisphosphate" speciesGlyph="sGlyph_1" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="408" y="138" />
+                        <end x="389" y="198" />
+                        <basePoint1 x="456" y="187" />
+                        <basePoint2 x="413" y="178" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J1_1" render:objectRole="product" speciesReference="ADP" speciesGlyph="sGlyph_8" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="408" y="138" />
+                        <end x="499" y="189.407407407407" />
+                        <basePoint1 x="456" y="187" />
+                        <basePoint2 x="456" y="201" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J1_3" render:objectRole="substrate" speciesReference="Glucose" speciesGlyph="sGlyph_0" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="341" y="100.738461538462" />
+                        <end x="408" y="138" />
+                        <basePoint1 x="372" y="105" />
+                        <basePoint2 x="360" y="89" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J1_4" render:objectRole="substrate" speciesReference="ATP" speciesGlyph="sGlyph_7" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="502" y="90.1168831168831" />
+                        <end x="408" y="138" />
+                        <basePoint1 x="449" y="87" />
+                        <basePoint2 x="360" y="89" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J1_5" render:objectRole="inhibitor" speciesReference="ATP" speciesGlyph="sGlyph_7" role="inhibitor" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="LineSegment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="503" y="106.956043956044" />
+                        <end x="435" y="155" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_2" reaction="J2">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J2_0" render:objectRole="product" speciesReference="glyceraldehyde_3_phosphate" speciesGlyph="sGlyph_2" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="359" y="258" />
+                        <end x="352.823529411765" y="308" />
+                        <basePoint1 x="359" y="275" />
+                        <basePoint2 x="321" y="258" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J2_1" render:objectRole="product" speciesReference="glyceraldehyde_3_phosphate" speciesGlyph="sGlyph_2" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="359" y="258" />
+                        <end x="373.130769230769" y="307" />
+                        <basePoint1 x="359" y="275" />
+                        <basePoint2 x="395" y="261" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J2_3" render:objectRole="substrate" speciesReference="fructose_1_6_bisphosphate" speciesGlyph="sGlyph_1" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="362.769230769231" y="233" />
+                        <end x="359" y="258" />
+                        <basePoint1 x="361" y="240" />
+                        <basePoint2 x="359" y="241" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_3" reaction="J3">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J3_0" render:objectRole="product" speciesReference="NAD" speciesGlyph="sGlyph_9" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="227" y="313" />
+                        <end x="164.333333333333" y="278" />
+                        <basePoint1 x="194" y="315" />
+                        <basePoint2 x="176" y="304" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J3_1" render:objectRole="product" speciesReference="Glycerol" speciesGlyph="sGlyph_13" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="227" y="313" />
+                        <end x="180" y="321.836734693878" />
+                        <basePoint1 x="194" y="315" />
+                        <basePoint2 x="195" y="318" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J3_3" render:objectRole="substrate" speciesReference="glyceraldehyde_3_phosphate" speciesGlyph="sGlyph_2" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="279" y="317.312252964427" />
+                        <end x="227" y="313" />
+                        <basePoint1 x="238" y="312" />
+                        <basePoint2 x="260" y="311" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J3_4" render:objectRole="substrate" speciesReference="NADH" speciesGlyph="sGlyph_10_alias_6" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="273" y="279" />
+                        <end x="227" y="313" />
+                        <basePoint1 x="270" y="296" />
+                        <basePoint2 x="260" y="311" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_4" reaction="J4">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J4_0" render:objectRole="product" speciesReference="ATP" speciesGlyph="sGlyph_7_alias_1" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="359" y="384" />
+                        <end x="479" y="415.2" />
+                        <basePoint1 x="359" y="415" />
+                        <basePoint2 x="418" y="383" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J4_1" render:objectRole="product" speciesReference="glycerate_3_phosphate" speciesGlyph="sGlyph_3" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="359" y="384" />
+                        <end x="363.32" y="431" />
+                        <basePoint1 x="359" y="415" />
+                        <basePoint2 x="359" y="400" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J4_2" render:objectRole="product" speciesReference="NADH" speciesGlyph="sGlyph_10_alias_7" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="359" y="384" />
+                        <end x="278" y="404.197278911565" />
+                        <basePoint1 x="359" y="415" />
+                        <basePoint2 x="323" y="396" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J4_4" render:objectRole="substrate" speciesReference="glyceraldehyde_3_phosphate" speciesGlyph="sGlyph_2" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="359.026315789474" y="345" />
+                        <end x="359" y="384" />
+                        <basePoint1 x="359" y="345" />
+                        <basePoint2 x="359" y="353" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J4_5" render:objectRole="substrate" speciesReference="ADP" speciesGlyph="sGlyph_8_alias_3" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="471" y="377.845070422535" />
+                        <end x="359" y="384" />
+                        <basePoint1 x="459" y="385" />
+                        <basePoint2 x="359" y="353" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J4_6" render:objectRole="substrate" speciesReference="NAD" speciesGlyph="sGlyph_9_alias_5" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="275" y="380.692307692308" />
+                        <end x="359" y="384" />
+                        <basePoint1 x="289" y="389" />
+                        <basePoint2 x="359" y="353" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_5" reaction="J5">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J5_0" render:objectRole="product" speciesReference="ATP" speciesGlyph="sGlyph_7_alias_0" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="355" y="514" />
+                        <end x="479" y="540.278481012658" />
+                        <basePoint1 x="355" y="558" />
+                        <basePoint2 x="424" y="534" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J5_1" render:objectRole="product" speciesReference="pyruvate" speciesGlyph="sGlyph_4" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="355" y="514" />
+                        <end x="358.59756097561" y="562" />
+                        <basePoint1 x="355" y="558" />
+                        <basePoint2 x="355" y="540" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J5_3" render:objectRole="substrate" speciesReference="glycerate_3_phosphate" speciesGlyph="sGlyph_3" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="359.741935483871" y="469" />
+                        <end x="355" y="514" />
+                        <basePoint1 x="355" y="481" />
+                        <basePoint2 x="355" y="470" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J5_4" render:objectRole="substrate" speciesReference="ADP" speciesGlyph="sGlyph_8_alias_2" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="473" y="487" />
+                        <end x="355" y="514" />
+                        <basePoint1 x="431" y="487" />
+                        <basePoint2 x="355" y="470" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_6" reaction="J6">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J6_0" render:objectRole="product" speciesReference="Acetyladehyde" speciesGlyph="sGlyph_5" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="358.333333333333" y="600" />
+                        <end x="360.329787234043" y="645" />
+                        <basePoint1 x="355" y="617" />
+                        <basePoint2 x="355" y="617" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J6_2" render:objectRole="substrate" speciesReference="pyruvate" speciesGlyph="sGlyph_4" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_7" reaction="J7">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J7_0" render:objectRole="product" speciesReference="NAD" speciesGlyph="sGlyph_9_alias_4" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="230" y="680" />
+                        <end x="164.935483870968" y="667" />
+                        <basePoint1 x="186" y="698" />
+                        <basePoint2 x="181" y="681" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J7_1" render:objectRole="product" speciesReference="ethanol" speciesGlyph="sGlyph_12" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="230" y="680" />
+                        <end x="167.125" y="731" />
+                        <basePoint1 x="186" y="698" />
+                        <basePoint2 x="176" y="702" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J7_3" render:objectRole="substrate" speciesReference="Acetyladehyde" speciesGlyph="sGlyph_5" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="313" y="665.041916167665" />
+                        <end x="230" y="680" />
+                        <basePoint1 x="280" y="666" />
+                        <basePoint2 x="274" y="662" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J7_4" render:objectRole="substrate" speciesReference="NADH" speciesGlyph="sGlyph_10" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="244.951612903226" y="629" />
+                        <end x="230" y="680" />
+                        <basePoint1 x="250" y="641" />
+                        <basePoint2 x="274" y="662" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_8" reaction="J8">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J8_0" render:objectRole="product" speciesReference="External_acetaldehyde" speciesGlyph="sGlyph_6" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="392.3" y="679" />
+                        <end x="460.3" y="718" />
+                        <basePoint1 x="418" y="694" />
+                        <basePoint2 x="418" y="694" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J8_2" render:objectRole="substrate" speciesReference="Acetyladehyde" speciesGlyph="sGlyph_5" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_9" reaction="J9">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J9_0" render:objectRole="product" speciesReference="ADP" speciesGlyph="sGlyph_8" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="550" y="103.153846153846" />
+                        <end x="547" y="170.940119760479" />
+                        <basePoint1 x="604" y="133" />
+                        <basePoint2 x="607" y="136" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J9_2" render:objectRole="substrate" speciesReference="ATP" speciesGlyph="sGlyph_7" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+            <reactionGlyph id="rGlyph_10" reaction="J10">
+              <boundingBox>
+                <position x="0" y="0" />
+                <dimensions width="0" height="0" />
+              </boundingBox>
+              <listOfSpeciesReferenceGlyphs>
+                <speciesReferenceGlyph id="SpeciesReference_J10_0" render:objectRole="product" speciesReference="Sink" speciesGlyph="sGlyph_14" role="product" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                  <curve>
+                    <listOfCurveSegments>
+                      <curveSegment xsi:type="CubicBezier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <start x="518.545454545455" y="749" />
+                        <end x="568" y="776.491525423729" />
+                        <basePoint1 x="532" y="756" />
+                        <basePoint2 x="532" y="756" />
+                      </curveSegment>
+                    </listOfCurveSegments>
+                  </curve>
+                </speciesReferenceGlyph>
+                <speciesReferenceGlyph id="SpeciesReference_J10_2" render:objectRole="substrate" speciesReference="External_acetaldehyde" speciesGlyph="sGlyph_6" role="substrate" xmlns:render="http://projects.eml.org/bcb/sbml/render/level2">
+                  <boundingBox>
+                    <position x="0" y="0" />
+                    <dimensions width="0" height="0" />
+                  </boundingBox>
+                </speciesReferenceGlyph>
+              </listOfSpeciesReferenceGlyphs>
+            </reactionGlyph>
+          </listOfReactionGlyphs>
+          <listOfTextGlyphs>
+            <textGlyph id="tGlyph_0" graphicalObject="sGlyph_0" text="Glucose">
+              <boundingBox>
+                <position x="280" y="84" />
+                <dimensions width="54" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_1" graphicalObject="sGlyph_1" text="fructose_1_6_bisphosphate">
+              <boundingBox>
+                <position x="293" y="202" />
+                <dimensions width="150" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_2" graphicalObject="sGlyph_2" text="glyceraldehyde_3_phosphate">
+              <boundingBox>
+                <position x="286" y="314" />
+                <dimensions width="157" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_3" graphicalObject="sGlyph_3" text="glycerate_3_phosphate">
+              <boundingBox>
+                <position x="302" y="438" />
+                <dimensions width="128" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_4" graphicalObject="sGlyph_4" text="pyruvate">
+              <boundingBox>
+                <position x="333" y="569" />
+                <dimensions width="57" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_5" graphicalObject="sGlyph_5" text="Acetyladehyde">
+              <boundingBox>
+                <position x="320" y="652" />
+                <dimensions width="87" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_6" graphicalObject="sGlyph_6" text="External_acetaldehyde">
+              <boundingBox>
+                <position x="425" y="722" />
+                <dimensions width="124" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_7_alias_0_text" graphicalObject="sGlyph_7_alias_0" text="ATP">
+              <boundingBox>
+                <position x="486" y="530" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_7_alias_1_text" graphicalObject="sGlyph_7_alias_1" text="ATP">
+              <boundingBox>
+                <position x="486" y="415" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_7" graphicalObject="sGlyph_7" text="ATP">
+              <boundingBox>
+                <position x="509" y="79" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_8_alias_2_text" graphicalObject="sGlyph_8_alias_2" text="ADP">
+              <boundingBox>
+                <position x="481" y="475" />
+                <dimensions width="35" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_8_alias_3_text" graphicalObject="sGlyph_8_alias_3" text="ADP">
+              <boundingBox>
+                <position x="477" y="351" />
+                <dimensions width="35" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_10" graphicalObject="sGlyph_8" text="ADP">
+              <boundingBox>
+                <position x="506" y="172" />
+                <dimensions width="35" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_9_alias_4_text" graphicalObject="sGlyph_9_alias_4" text="NAD">
+              <boundingBox>
+                <position x="127" y="638" />
+                <dimensions width="36" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_9_alias_5_text" graphicalObject="sGlyph_9_alias_5" text="NAD">
+              <boundingBox>
+                <position x="232" y="356" />
+                <dimensions width="36" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_13" graphicalObject="sGlyph_9" text="NAD">
+              <boundingBox>
+                <position x="138" y="247" />
+                <dimensions width="36" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_10_alias_6_text" graphicalObject="sGlyph_10_alias_6" text="NADH">
+              <boundingBox>
+                <position x="253" y="248" />
+                <dimensions width="43" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="sGlyph_10_alias_7_text" graphicalObject="sGlyph_10_alias_7" text="NADH">
+              <boundingBox>
+                <position x="228" y="397" />
+                <dimensions width="43" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_16" graphicalObject="sGlyph_10" text="NADH">
+              <boundingBox>
+                <position x="217" y="598" />
+                <dimensions width="43" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_19" graphicalObject="sGlyph_11" text="External_glucose">
+              <boundingBox>
+                <position x="121" y="61" />
+                <dimensions width="97" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_20" graphicalObject="sGlyph_12" text="ethanol">
+              <boundingBox>
+                <position x="137" y="738" />
+                <dimensions width="49" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_21" graphicalObject="sGlyph_13" text="Glycerol">
+              <boundingBox>
+                <position x="119" y="319" />
+                <dimensions width="54" height="24" />
+              </boundingBox>
+            </textGlyph>
+            <textGlyph id="tGlyph_22" graphicalObject="sGlyph_14" text="Sink">
+              <boundingBox>
+                <position x="574" y="777" />
+                <dimensions width="34" height="24" />
+              </boundingBox>
+            </textGlyph>
+          </listOfTextGlyphs>
+        </layout>
+      </listOfLayouts>
+    </annotation>
+    <listOfCompartments>
+      <compartment id="compartment" size="1" />
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="Glucose" boundaryCondition="false" initialConcentration="0" compartment="compartment" />
+      <species id="fructose_1_6_bisphosphate" boundaryCondition="false" initialConcentration="0" compartment="compartment" />
+      <species id="glyceraldehyde_3_phosphate" boundaryCondition="false" initialConcentration="0" compartment="compartment" />
+      <species id="glycerate_3_phosphate" boundaryCondition="false" initialConcentration="0" compartment="compartment" />
+      <species id="pyruvate" boundaryCondition="false" initialConcentration="0" compartment="compartment" />
+      <species id="Acetyladehyde" boundaryCondition="false" initialConcentration="0" compartment="compartment" />
+      <species id="External_acetaldehyde" boundaryCondition="false" initialConcentration="0" compartment="compartment" />
+      <species id="ATP" boundaryCondition="false" initialConcentration="3" compartment="compartment" />
+      <species id="ADP" boundaryCondition="false" initialConcentration="1" compartment="compartment" />
+      <species id="NAD" boundaryCondition="false" initialConcentration="0.5" compartment="compartment" />
+      <species id="NADH" boundaryCondition="false" initialConcentration="0.5" compartment="compartment" />
+      <species id="External_glucose" boundaryCondition="true" initialConcentration="0" compartment="compartment" />
+      <species id="ethanol" boundaryCondition="true" initialConcentration="0" compartment="compartment" />
+      <species id="Glycerol" boundaryCondition="true" initialConcentration="0" compartment="compartment" />
+      <species id="Sink" boundaryCondition="true" initialConcentration="0" compartment="compartment" />
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="J0_inputFlux" value="50" />
+      <parameter id="J1_k1" value="550" />
+      <parameter id="J1_Ki" value="1" />
+      <parameter id="J1_n" value="4" />
+      <parameter id="J2_J2_k" value="9.8" />
+      <parameter id="J3_J3_k" value="85.7" />
+      <parameter id="J4_kg" value="323.8" />
+      <parameter id="J4_kp" value="76411.1" />
+      <parameter id="J4_ka" value="57823.1" />
+      <parameter id="J4_kk" value="23.7" />
+      <parameter id="J5_J5_k" value="80" />
+      <parameter id="J6_J6_k" value="9.7" />
+      <parameter id="J7_J7_k" value="2000" />
+      <parameter id="J8_J8_k1" value="375" />
+      <parameter id="J8_J8_k2" value="375" />
+      <parameter id="J9_J9_k" value="28" />
+      <parameter id="J10_J10_k" value="80" />
+      <parameter id="J2_k" value="9.8" />
+      <parameter id="J3_k" value="85.7" />
+      <parameter id="J5_k" value="80" />
+      <parameter id="J6_k" value="9.7" />
+      <parameter id="J7_k" value="2000" />
+      <parameter id="J8_k1" value="375" />
+      <parameter id="J8_k2" value="375" />
+      <parameter id="J9_k" value="28" />
+      <parameter id="J10_k" value="80" />
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="J0" reversible="false">
+        <listOfReactants>
+          <speciesReference species="External_glucose" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Glucose" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci>
+                        J0_inputFlux
+                  </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J1" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Glucose" stoichiometry="1" />
+          <speciesReference species="ATP" stoichiometry="2" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fructose_1_6_bisphosphate" stoichiometry="1" />
+          <speciesReference species="ADP" stoichiometry="2" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J1_k1
+                     </ci>
+              <ci>
+                           Glucose
+                     </ci>
+              <ci>
+                           ATP
+                     </ci>
+              <apply>
+                <divide />
+                <cn type="integer">
+                              1
+                        </cn>
+                <apply>
+                  <plus />
+                  <cn type="integer">
+                                 1
+                           </cn>
+                  <apply>
+                    <power />
+                    <apply>
+                      <divide />
+                      <ci>
+                                       ATP
+                                 </ci>
+                      <ci>
+                                       J1_Ki
+                                 </ci>
+                    </apply>
+                    <ci>
+                                    J1_n
+                              </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J2" reversible="false">
+        <listOfReactants>
+          <speciesReference species="fructose_1_6_bisphosphate" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="glyceraldehyde_3_phosphate" stoichiometry="1" />
+          <speciesReference species="glyceraldehyde_3_phosphate" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J2_J2_k
+                     </ci>
+              <ci>
+                           fructose_1_6_bisphosphate
+                     </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J3" reversible="false">
+        <listOfReactants>
+          <speciesReference species="glyceraldehyde_3_phosphate" stoichiometry="1" />
+          <speciesReference species="NADH" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD" stoichiometry="1" />
+          <speciesReference species="Glycerol" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J3_J3_k
+                     </ci>
+              <ci>
+                           glyceraldehyde_3_phosphate
+                     </ci>
+              <ci>
+                           NADH
+                     </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J4" reversible="false">
+        <listOfReactants>
+          <speciesReference species="glyceraldehyde_3_phosphate" stoichiometry="1" />
+          <speciesReference species="ADP" stoichiometry="1" />
+          <speciesReference species="NAD" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" stoichiometry="1" />
+          <speciesReference species="glycerate_3_phosphate" stoichiometry="1" />
+          <speciesReference species="NADH" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide />
+              <apply>
+                <minus />
+                <apply>
+                  <times />
+                  <ci>
+                                 J4_kg
+                           </ci>
+                  <ci>
+                                 J4_kp
+                           </ci>
+                  <ci>
+                                 glyceraldehyde_3_phosphate
+                           </ci>
+                  <ci>
+                                 NAD
+                           </ci>
+                  <ci>
+                                 ADP
+                           </ci>
+                </apply>
+                <apply>
+                  <times />
+                  <ci>
+                                 J4_ka
+                           </ci>
+                  <ci>
+                                 J4_kk
+                           </ci>
+                  <ci>
+                                 glycerate_3_phosphate
+                           </ci>
+                  <ci>
+                                 ATP
+                           </ci>
+                  <ci>
+                                 NADH
+                           </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus />
+                <apply>
+                  <times />
+                  <ci>
+                                 J4_ka
+                           </ci>
+                  <ci>
+                                 NADH
+                           </ci>
+                </apply>
+                <apply>
+                  <times />
+                  <ci>
+                                 J4_kp
+                           </ci>
+                  <ci>
+                                 ADP
+                           </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J5" reversible="false">
+        <listOfReactants>
+          <speciesReference species="glycerate_3_phosphate" stoichiometry="1" />
+          <speciesReference species="ADP" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" stoichiometry="1" />
+          <speciesReference species="pyruvate" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J5_J5_k
+                     </ci>
+              <ci>
+                           glycerate_3_phosphate
+                     </ci>
+              <ci>
+                           ADP
+                     </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J6" reversible="false">
+        <listOfReactants>
+          <speciesReference species="pyruvate" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Acetyladehyde" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J6_J6_k
+                     </ci>
+              <ci>
+                           pyruvate
+                     </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J7" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Acetyladehyde" stoichiometry="1" />
+          <speciesReference species="NADH" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD" stoichiometry="1" />
+          <speciesReference species="ethanol" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J7_J7_k
+                     </ci>
+              <ci>
+                           Acetyladehyde
+                     </ci>
+              <ci>
+                           NADH
+                     </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J8" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Acetyladehyde" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="External_acetaldehyde" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus />
+              <apply>
+                <times />
+                <ci>
+                              J8_J8_k1
+                        </ci>
+                <ci>
+                              Acetyladehyde
+                        </ci>
+              </apply>
+              <apply>
+                <times />
+                <ci>
+                              J8_J8_k2
+                        </ci>
+                <ci>
+                              External_acetaldehyde
+                        </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J9" reversible="false">
+        <listOfReactants>
+          <speciesReference species="ATP" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ADP" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J9_J9_k
+                     </ci>
+              <ci>
+                           ATP
+                     </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="J10" reversible="false">
+        <listOfReactants>
+          <speciesReference species="External_acetaldehyde" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Sink" stoichiometry="1" />
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times />
+              <ci>
+                           J10_J10_k
+                     </ci>
+              <ci>
+                           External_acetaldehyde
+                     </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
